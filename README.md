@@ -1,6 +1,6 @@
 # pomodoro
 
-A new Flutter project.
+Pomodoro project in Flutter with as exercise of Flutter MasterClass by [Cod3r Cursos](https://www.youtube.com/watch?v=LeRjIY4n2Vk).
 
 ## Getting Started
 
