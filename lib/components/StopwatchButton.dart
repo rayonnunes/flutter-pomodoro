@@ -3,24 +3,26 @@ import 'package:flutter/material.dart';
 class StopwatchButton extends StatelessWidget {
   final String title;
   final IconData icon;
+  final void Function()? onClick;
 
   const StopwatchButton({
       Key? key,
       required this.title,
       required this.icon,
+      this.onClick
   }) : super(key : key);
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: onClick,
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.black,
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           horizontal: 30,
           vertical: 20,
         ),
-        textStyle: TextStyle(
+        textStyle: const TextStyle(
           fontSize: 25,
         )
       ),
